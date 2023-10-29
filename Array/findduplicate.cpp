@@ -1,4 +1,5 @@
 // https://www.codingninjas.com/studio/problems/duplicate-in-array_893397?
+// It's quite similar to find_unique
 #include<iostream>
 #include<vector>
 using namespace std;
