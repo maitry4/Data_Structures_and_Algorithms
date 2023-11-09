@@ -15,8 +15,20 @@ int finddup(vector<int> arr, int n) {
     }
     return ans;
 }
+int finddup_another(vector<int> arr, int n)
+{
+    for(int i=0;i<arr.size();i++)
+	{
+		int ind = arr.size()-abs(arr[i]);
+		if(arr[ind]<0)
+		{
+			return abs(arr[i]);
+		}
+		arr[ind]*=-1;
+	}
+}
 int main() {
     vector<int> a{1,2,3,4,3,5};
-    cout<<finddup(a, 6);
+    cout<<finddup_another(a, 6);
     return 0;
 }
